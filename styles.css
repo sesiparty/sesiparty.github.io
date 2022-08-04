@@ -5,12 +5,20 @@ body {
 }
 
 div {
-    max-width: 50%;
+    padding-left:2rem;
+    padding-right:2rem;
     align-content: center;
     margin:auto;
 
 
 }
+/* If it is a desktop, then the width is 50% */
+@media screen and (min-width: 768px) {
+  div {
+    max-width: 50%;
+  }
+}
+
 
 h1 {
     color: #fff;
