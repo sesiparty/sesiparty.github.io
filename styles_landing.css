@@ -1,0 +1,82 @@
+/* Body background color : #FF8888 */
+ 
+body {
+    background-color: #FF8888;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: start;
+    font-family: 'open sans', sans-serif;
+    font-size: 4rem;
+}
+
+p {
+    color: #ffffff;
+    text-align: start;
+    font-size: 1.8rem;
+    font-family: 'open sans', sans-serif;
+
+}
+
+/* The class column container contains two divs , that is, the left and right columns */
+.column-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+
+  }
+
+.game-text {
+    /* The left column */
+    flex: 0 1 50%;
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+
+}
+.iphone-image {
+   flex: 0 1 30%;
+}
+
+.game-description {
+   /* The subtitle at left column */
+   
+   /* make text not so wide */
+
+  
+}
+
+.buttons-container {
+  margin-top: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  body {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+  
+@media screen and (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  body {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .game-text {
+    flex: 0 1 100%;
+  }
+  
+}
